@@ -1,0 +1,47 @@
+.message{
+display: flex;
+gap: 20px;
+margin-bottom: 10px;
+    .messageInfo{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        color: rgb(181, 179, 179);
+        font-weight: 500;
+        margin-bottom: 20px;
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+    .messageContent{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        p{
+            background: #8553be;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 0px 10px 10px 10px;
+            max-width: max-content;
+        }
+        img{
+            width: 50%;
+            border-radius: 10px;
+        }
+    }
+    &.owner{
+        flex-direction: row-reverse;
+        .messageContent{
+            align-items: end;
+            p{
+                background: lightgray;
+                color: black;
+                border-radius: 10px 0 10px 10px ;
+            }
+        }
+        
+    }
+}

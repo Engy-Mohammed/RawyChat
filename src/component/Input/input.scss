@@ -1,0 +1,40 @@
+.input {
+  height: 50px;
+  border-top: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  input {
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 90%;
+    font-size: 18px;
+    &::placeholder{
+      font-size: 18px;
+      color:lightgray;
+    }
+  }
+
+  .inputContent {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    input {
+      display: none;
+    }
+    img {
+      width: 25px;
+      cursor: pointer;
+    }
+    button{
+      font-size: 18px;
+        padding: 10px 20px;
+        border: none;
+        background: linear-gradient(to right, #98e4ff, #8553be);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+  }
+}
